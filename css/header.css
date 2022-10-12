@@ -61,7 +61,7 @@ nav img {
     content: "";
     width: 0%;
     height: 2px;
-    background: #a5c9ca;
+    background: #f7fdfb;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -86,14 +86,24 @@ nav img {
 }
 
 
-/* .login.btn {
-    background-color: #2c3333;
-    color: #e7f6f2;
-    border: 1px solid #e7f6f2;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-right: 10px;
-} */
+#login-button {
+    background-color: #e7f6f2 ;
+    color: #2c3333;
+    border-radius: 25px;
+    padding: 7px 22px;
+    font-weight:500 ;
+}
+.nav-links ul .login-subrayado {
+    padding: 8px 12px;
+}
+
+.nav-links ul .login-subrayado:hover::after{
+    width: 0;
+}
+.nav-links ul #login-button:hover{
+    background-color:#C5DDDE;
+    transition: 0.5 all;
+}
 
 nav .fa {
     display: none;
@@ -126,5 +136,8 @@ nav .fa {
     }
     .nav-links ul {
         padding: 30px;
+    }
+    .nav-links ul .login-subrayado {
+        padding: 8px 0px;
     }
 }
